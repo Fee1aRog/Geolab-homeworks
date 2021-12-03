@@ -15,4 +15,3 @@ for (const value of iterator2) {
 cars.sort();
 console.log(cars);
 //ლოგავს ანბანის მიხედვით სორტირებულ ელემენტებს
-//sdasdadad
