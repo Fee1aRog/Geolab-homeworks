@@ -15,8 +15,18 @@ const arr =[
 
 const mdiv = document.querySelector('.mdiv');
 const ul = document.createElement('ul');
-const li = document.createElement('li');
-console.log(ul);
+
+// arr.forEach(item => {
+//     const li = document.createElement('li');
+//     li.textContent=item;
+//     ul.appendChild(li);
+// });
+
+for(let item of arr){
+    const li = document.createElement('li');
+    li.textContent=item;
+    ul.appendChild(...li);
+}
+
 mdiv.appendChild(ul);
-ul.appendChild(li);
-li.textContent= arr;
+console.log(ul);
